@@ -83,7 +83,7 @@ const Homepage = () => {
     return(
         <>
             <div className="h-full bg-gradient-to-b from-[#080F20] to-[#121E43] px-4 md:px-20 py-6">
-                {/* Header */}
+
                 <div className="flex flex-col md:flex-row items-center border-[1.5px] border-[#152B50] bg-[#0F182B] p-4 md:p-6 rounded-3xl gap-4 md:gap-6">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" className="w-16 md:w-24"/>
                     <div>
@@ -92,9 +92,9 @@ const Homepage = () => {
                     </div>
                 </div>
 
-                {/* Main Content */}
+
                 <div className="flex flex-col md:flex-row justify-between gap-6 mt-6">
-                    {/* Astronomy Picture */}
+
                     <div className="flex flex-col gap-4 border-[1.5px] border-[#152B50] p-4 md:p-6 rounded-3xl flex-1">
                         <div className="flex flex-row items-center gap-2 md:gap-4">
                             <img src={AstronomyHeader} alt="astronomy image section" className="w-12 md:w-16"/>
@@ -141,11 +141,11 @@ const Homepage = () => {
                                                     "&:hover": { backgroundColor: "rgba(36, 211, 239, 0.1)" }
                                                 }}
                                             >
-                                                <TableCell sx={{ color: "#FFFFFF" }}>{planet.name}</TableCell>
-                                                <TableCell align="right" sx={{ color: "#FFFFFF" }}>{planet.mass}</TableCell>
-                                                <TableCell align="right" sx={{ color: "#FFFFFF" }}>{planet.radius}</TableCell>
-                                                <TableCell align="right" sx={{ color: "#FFFFFF" }}>{planet.host_star_temperature}</TableCell>
-                                                <TableCell align="right" sx={{ color: "#FFFFFF" }}>{planet.distance_light_year}</TableCell>
+                                                <TableCell sx={{ color: "white" }}>{planet.name}</TableCell>
+                                                <TableCell align="right" sx={{ color: "white" }}>{planet.mass}</TableCell>
+                                                <TableCell align="right" sx={{ color: "white" }}>{planet.radius}</TableCell>
+                                                <TableCell align="right" sx={{ color: "white" }}>{planet.host_star_temperature}</TableCell>
+                                                <TableCell align="right" sx={{ color: "white" }}>{planet.distance_light_year}</TableCell>
                                             </TableRow>
                                         ))}
                                     </TableBody>
