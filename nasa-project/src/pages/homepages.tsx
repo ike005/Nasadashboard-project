@@ -77,7 +77,6 @@ const Homepage = () => {
 
     useEffect(() => {
         getAstroPictureOfTheDay();
-        getPlanetsData();
     }, []);
 
 
@@ -117,6 +116,10 @@ const Homepage = () => {
                         {/*</div>*/}
 
                         <div className="bg-[#0F182B] border-[1.5px] border-[#152B50] p-2 md:p-4 rounded-3xl w-full h-64 md:h-1/2 overflow-auto">
+                            <div className="flex flex-row items-center gap-[1rem]">
+                                <button className="bg-[#24D3EF] text-white px-4 py-2 rounded-full mb-4 cursor-pointer" onClick={getPlanetsData}>Get Planets</button>
+                                <p className="text-[#24D3EF] text-sm font-bold">Click button to get planets information</p>
+                            </div>
                             <TableContainer component="div">
                                 <Table sx={{ minWidth: 0 }}>
                                     <TableHead>
