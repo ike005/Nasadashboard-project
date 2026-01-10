@@ -82,7 +82,7 @@ const Homepage = () => {
 
     return(
         <>
-            <div className="h-full bg-gradient-to-b from-[#080F20] to-[#121E43] px-4 md:px-20 py-6">
+            <div className="h-[100vh] bg-gradient-to-b from-[#080F20] to-[#121E43] px-4 md:px-20 py-6">
 
                 <div className="flex flex-col md:flex-row items-center border-[1.5px] border-[#152B50] bg-[#0F182B] p-4 md:p-6 rounded-3xl gap-4 md:gap-6">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" className="w-16 md:w-24"/>
