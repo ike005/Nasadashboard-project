@@ -82,18 +82,18 @@ const Homepage = () => {
 
     return(
         <>
-            <div className="h-[100vh] bg-gradient-to-b from-[#080F20] to-[#121E43] px-4 md:px-20 py-6">
+            <div className="min-h-[100vh] h-full bg-gradient-to-b from-[#080F20] to-[#121E43] px-4 md:px-20 py-6">
 
                 <div className="flex flex-col md:flex-row items-center border-[1.5px] border-[#152B50] bg-[#0F182B] p-4 md:p-6 rounded-3xl gap-4 md:gap-6">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" className="w-16 md:w-24"/>
-                    <div>
+                    <div className="text-center md:text-left">
                         <h1 className="text-[#24D3EF] text-xl md:text-3xl font-bold">NASA Space Information Dashboard</h1>
                         <p className="text-[#6389B4] text-sm md:text-md">Real-time space data and exploration</p>
                     </div>
                 </div>
 
 
-                <div className="flex flex-col md:flex-row justify-between gap-6 mt-6">
+                <div className="flex flex-col lg:flex-row justify-between gap-6 mt-6">
 
                     <div className="flex flex-col gap-4 border-[1.5px] border-[#152B50] p-4 md:p-6 rounded-3xl flex-1">
                         <div className="flex flex-row items-center gap-2 md:gap-4">
@@ -110,15 +110,15 @@ const Homepage = () => {
                     </div>
 
 
-                    <div className="flex flex-row md:flex-col gap-6 md:w-1/3 w-full">
+                    <div className="flex flex-row md:flex-col gap-6 lg:w-1/3 w-full">
                         {/*<div className="border-[1.5px] border-[#152B50] p-4 md:p-6 rounded-3xl h-64 md:h-1/2">*/}
                         {/*    <img src="https://apod.nasa.gov/apod/image/2511/NebularSymphonyOrionsBelt2048.jpg" alt="astronomy side image" className="w-full h-full object-cover rounded-3xl" />*/}
                         {/*</div>*/}
 
                         <div className="bg-[#0F182B] border-[1.5px] border-[#152B50] p-2 md:p-4 rounded-3xl w-full h-64 md:h-1/2 overflow-auto">
                             <div className="flex flex-row items-center gap-[1rem]">
-                                <button className="bg-[#24D3EF] text-white px-4 py-2 rounded-full mb-4 cursor-pointer" onClick={getPlanetsData}>Get Planets</button>
-                                <p className="text-[#24D3EF] text-sm font-bold">Click button to get planets information</p>
+                                <button className="bg-[#24D3EF] text-white px-4 py-2 rounded-3xl mb-4 cursor-pointer" onClick={getPlanetsData}>Get Planets</button>
+                                <p className="text-[#24D3EF] text-sm font-thin italic">Click button to get planets information</p>
                             </div>
                             <TableContainer component="div">
                                 <Table sx={{ minWidth: 0 }}>
