@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+/venv
+.env
+
+# Build outputs
+dist/
+build/
+*.exe
+
+# System files
+.DS_Store
